@@ -7,10 +7,17 @@ export function Home() {
   return (
     <div className="relative w-full bg-white flex flex-col font-sans overflow-x-hidden">
 
-      {/* Hero Section — minimum height ensures circle completes its bottom curve smoothly without clipping */}
-      <section className="relative min-h-screen lg:min-h-[calc(1020 / 1920 * 100vw)] w-full flex flex-col justify-between">
+      {/* Hero Section — minHeight ensures circle completes its bottom curve smoothly even when fullscreen */}
+      <section
+        className="relative w-full flex flex-col justify-between"
+        style={{ minHeight: 'max(100vh, calc(1020 / 1920 * 100vw))' }}
+      >
         {/* Background Circle — exact Figma: X: 1060px, Y: -520px, 1500x1500px in 1920 space */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none -z-0" aria-hidden="true">
+        <div
+          className="absolute top-0 left-0 w-full overflow-hidden pointer-events-none -z-0"
+          style={{ height: 'max(100%, calc(1020 / 1920 * 100vw))' }}
+          aria-hidden="true"
+        >
           <div
             className="absolute rounded-full pointer-events-none"
             style={{
@@ -24,7 +31,7 @@ export function Home() {
         </div>
 
         {/* Header / Logo */}
-        <header className="relative z-10 w-full px-8 sm:px-14 lg:px-20 xl:px-[10vw] pt-8 lg:pt-10 xl:pt-12">
+        <header className="relative z-10 w-full px-8 sm:px-14 lg:px-20 xl:px-[10vw] pt-5 lg:pt-6 xl:pt-7">
           <Link to="/" className="inline-block">
             <img
               src={logo}
