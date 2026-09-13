@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import phoneMockup from '../../assets/img/markup-4.png'
+import phoneMockupDesktop from '../../assets/img/markup-4.png'
+import phoneMockupMobile from '../../assets/img/markup-5.png'
 import { ScrollReveal } from '../common/ScrollReveal'
 
 export function DownloadCTA() {
@@ -24,7 +25,7 @@ export function DownloadCTA() {
       </div>
 
       <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-2 sm:gap-8 lg:gap-16 xl:gap-20">
-        
+
         {/* Text Content & CTA (First on Mobile, Right on Desktop) */}
         <ScrollReveal direction="left" delay={0.2} className="flex flex-col items-center lg:items-start text-center lg:text-left lg:order-2">
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] xl:text-5xl font-bold text-[#38A5DC] tracking-tight leading-[1.18] mb-5">
@@ -51,11 +52,20 @@ export function DownloadCTA() {
         {/* Phone Mockup (Second on Mobile, Left on Desktop) */}
         <div className="relative flex justify-center items-end lg:items-center lg:order-1 mt-2 lg:mt-0 w-full">
           <ScrollReveal direction="up" className="relative flex justify-center items-center w-full">
-            <img
-              src={phoneMockup}
-              alt="Download PharmaDali App Preview"
-              className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out -mb-72 sm:-mb-80 lg:mb-0"
-            />
+            <>
+              {/* Mobile Image (markup-5) with sneaking effect */}
+              <img
+                src={phoneMockupMobile}
+                alt="Download PharmaDali App Preview"
+                className="block lg:hidden w-full max-w-[280px] sm:max-w-[340px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out -mb-[365px] sm:-mb-[475px]"
+              />
+              {/* Desktop Image (markup-4) with full height */}
+              <img
+                src={phoneMockupDesktop}
+                alt="Download PharmaDali App Preview"
+                className="hidden lg:block w-full lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
+              />
+            </>
           </ScrollReveal>
         </div>
 
