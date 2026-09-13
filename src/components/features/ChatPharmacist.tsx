@@ -23,7 +23,7 @@ export function ChatPharmacist() {
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2.5 tracking-tight">
               Ask. Get Guidance. Order with Confidence.
             </h3>
-            <p className="text-white/90 text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-xl">
+            <p className="text-white/90 text-[15px] sm:text-base lg:text-lg leading-relaxed font-normal max-w-xl">
               Need help with your order or have a question about your medicine?
               <br className="hidden sm:inline" /> Connect with the pharmacy through the{' '}
               <strong className="font-semibold text-white">PharmaDali app.</strong>

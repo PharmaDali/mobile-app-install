@@ -55,12 +55,12 @@ export function Home() {
 
           {/* Left Column — Text Content vertically centered */}
           <ScrollReveal direction="right" className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8 max-w-xl xl:max-w-2xl mx-auto lg:mx-0">
-            <h1 className="text-[40px] sm:text-5xl lg:text-[50px] xl:text-[58px] 2xl:text-[62px] font-semibold text-[#333333] leading-[1.1] sm:leading-[1.18] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[50px] xl:text-[58px] 2xl:text-[62px] font-semibold text-[#333333] leading-[1.15] sm:leading-[1.18] tracking-tight">
               Mas pina<span className="text-[#FF4242]">dali</span>ng<br />
               pagbili ng gamot!
             </h1>
 
-            <p className="text-[#888888] text-sm sm:text-base lg:text-base xl:text-lg max-w-md leading-relaxed font-normal">
+            <p className="text-[#888888] text-[15px] sm:text-base lg:text-base xl:text-lg max-w-md leading-relaxed font-normal">
               Iwas-pila sa botika! Order your medicines online through the PharmaDali App and pick them up at the Pharmacy when ready!
             </p>
 

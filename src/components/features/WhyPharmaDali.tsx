@@ -10,10 +10,10 @@ function FeatureCard({ icon, title, description, descriptionLine2, className = '
       <div className="mb-2.5 sm:mb-4 lg:mb-6 h-7 sm:h-9 lg:h-12 flex items-center">
         <img src={icon} alt={title} className="h-6 sm:h-8 lg:h-12 w-auto object-contain" />
       </div>
-      <h3 className="text-[#38A5DC] text-base sm:text-lg lg:text-2xl font-bold mb-1.5 sm:mb-2 lg:mb-3 tracking-tight leading-snug">
+      <h3 className="text-[#38A5DC] text-lg sm:text-xl lg:text-2xl font-bold mb-1.5 sm:mb-2 lg:mb-3 tracking-tight leading-snug">
         {title}
       </h3>
-      <p className="text-[#777777] text-sm sm:text-sm lg:text-[15px] leading-relaxed font-normal">
+      <p className="text-[#777777] text-[15px] sm:text-[15px] lg:text-[15px] leading-relaxed font-normal">
         {description}
         {descriptionLine2 && (
           <>
