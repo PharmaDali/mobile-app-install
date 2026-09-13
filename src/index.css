@@ -3,6 +3,16 @@
 @theme {
   --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --animate-blob: blob 15s infinite;
+  --animate-blob-delayed: blob 15s infinite 2s;
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(50px, -50px) scale(1.1); }
+    66% { transform: translate(-40px, 40px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
 }
 
 #root {
