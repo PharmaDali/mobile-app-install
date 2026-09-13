@@ -28,10 +28,10 @@ export function OurClients() {
           {PHARMACY_CLIENTS.map((client) => (
             <div
               key={client.name}
-              className="flex flex-col items-start text-left px-2 sm:px-8"
+              className="flex flex-col items-center md:items-start text-center md:text-left px-2 sm:px-8"
             >
               {/* Client Logo */}
-              <div className="h-16 sm:h-20 w-full flex items-center justify-start mb-6">
+              <div className="h-16 sm:h-20 w-full flex items-center justify-center md:justify-start mb-6">
                 <img
                   src={client.logo}
                   alt={`${client.name} Logo`}
@@ -40,17 +40,17 @@ export function OurClients() {
               </div>
 
               {/* Location Info */}
-              <div className="flex items-start gap-3.5 pt-1">
+              <div className="flex flex-col items-center md:flex-row md:items-start gap-2 md:gap-3.5 pt-1">
                 <img
                   src={locationIcon}
                   alt="Location"
-                  className="w-6 h-6 shrink-0 mt-0.5 object-contain"
+                  className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 mt-0 md:mt-0.5 object-contain"
                 />
-                <div className="flex flex-col text-left">
-                  <p className="text-[#333333] text-xs sm:text-[13.5px] font-medium leading-snug">
+                <div className="flex flex-col text-center md:text-left">
+                  <p className="text-[#333333] text-[14px] sm:text-[15px] font-medium leading-snug">
                     {client.address1}
                   </p>
-                  <p className="text-[#777777] text-xs sm:text-[13px] leading-snug mt-0.5">
+                  <p className="text-[#777777] text-[13px] sm:text-[14px] leading-snug mt-1">
                     {client.address2}
                   </p>
                 </div>
