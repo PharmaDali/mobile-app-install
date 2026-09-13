@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/svg/PhamaDali Logo v2.svg'
 import phoneMockup from '../assets/img/markup-1.png'
 import { WhyPharmaDali } from '../components/features/WhyPharmaDali'
+import { HowItWorks } from '../components/features/HowItWorks'
+import { ChatPharmacist } from '../components/features/ChatPharmacist'
+import { OurClients } from '../components/features/OurClients'
+import { FAQ } from '../components/features/FAQ'
+import { DownloadCTA } from '../components/features/DownloadCTA'
 
 export function Home() {
   return (
@@ -79,6 +84,21 @@ export function Home() {
 
       {/* Why PharmaDali Section */}
       <WhyPharmaDali />
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* Chat with a Pharmacist Section */}
+      <ChatPharmacist />
+
+      {/* Our Clients Section */}
+      <OurClients />
+
+      {/* Frequently Asked Questions Section */}
+      <FAQ />
+
+      {/* Download CTA Section */}
+      <DownloadCTA />
 
     </div>
   )
