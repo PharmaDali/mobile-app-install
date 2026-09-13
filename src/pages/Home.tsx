@@ -19,7 +19,7 @@ export function Home() {
       >
         {/* Animated Background Blobs */}
         <div
-          className="absolute top-0 right-0 lg:left-0 w-full overflow-hidden pointer-events-none -z-0"
+          className="absolute top-0 right-0 lg:left-0 w-full pointer-events-none -z-0"
           style={{ height: 'max(100%, calc(1020 / 1920 * 100vw))' }}
           aria-hidden="true"
         >
@@ -40,7 +40,7 @@ export function Home() {
         </div>
 
         {/* Header / Logo */}
-        <header className="relative z-10 w-full px-8 sm:px-14 lg:px-20 xl:px-[10vw] pt-5 lg:pt-6 xl:pt-7">
+        <header className="relative z-10 w-full px-5 sm:px-10 lg:px-20 xl:px-[10vw] pt-5 lg:pt-6 xl:pt-7">
           <Link to="/" className="inline-block">
             <img
               src={logo}
@@ -51,7 +51,7 @@ export function Home() {
         </header>
 
         {/* Hero Section — 2 Columns (1920 Desktop Reference) */}
-        <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-2 items-center w-full px-8 sm:px-14 lg:px-20 xl:px-[10vw] py-8 lg:py-0">
+        <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-2 items-center w-full px-5 sm:px-10 lg:px-20 xl:px-[10vw] py-8 lg:py-0">
 
           {/* Left Column — Text Content vertically centered */}
           <ScrollReveal direction="right" className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8 max-w-xl xl:max-w-2xl mx-auto lg:mx-0">

@@ -35,7 +35,7 @@ export const WHY_PHARMADALI_FEATURES: FeatureItem[] = [
     icon: pickupGoIcon,
     title: 'Pick Up & Go',
     description: 'Ready na? Pick it up! Kunin ang iyong prepared order sa selected pharmacy— simple at convenient.',
-    className: 'col-span-2 lg:col-span-3',
+    className: 'col-span-1 sm:col-span-2 lg:col-span-3',
   },
 ]
 

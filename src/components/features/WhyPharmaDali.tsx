@@ -41,7 +41,7 @@ export function WhyPharmaDali() {
             - Phone: 2x2 grid with "Pick Up & Go" fluid (col-span-2)
             - Desktop: 3 in top row (col-span-2/6 each) and 2 in bottom row (col-span-3/6 each)
         */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
           {WHY_PHARMADALI_FEATURES.map((feature, index) => (
             <ScrollReveal 
               key={feature.title} 
@@ -49,7 +49,7 @@ export function WhyPharmaDali() {
               delay={index * 0.15}
               className={feature.className}
             >
-              <FeatureCard {...feature} className="h-full w-full" />
+              <FeatureCard {...feature} />
             </ScrollReveal>
           ))}
         </div>

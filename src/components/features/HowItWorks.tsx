@@ -4,7 +4,7 @@ import { ScrollReveal } from '../common/ScrollReveal'
 
 export function HowItWorks() {
   return (
-    <section className="relative w-full py-12 sm:py-20 lg:py-28 px-6 sm:px-12 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
+    <section className="relative w-full py-12 sm:py-20 lg:py-28 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center">
         {/* Section Heading */}
         <ScrollReveal direction="up">
