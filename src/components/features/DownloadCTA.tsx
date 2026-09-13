@@ -4,7 +4,7 @@ import { ScrollReveal } from '../common/ScrollReveal'
 
 export function DownloadCTA() {
   return (
-    <section className="relative w-full py-12 sm:py-20 lg:py-32 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
+    <section className="relative w-full pt-12 pb-0 lg:pt-32 lg:pb-32 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none -z-0" aria-hidden="true">
         <div
@@ -23,27 +23,17 @@ export function DownloadCTA() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-20">
-        {/* Left Column — Phone Mockup */}
-        <div className="relative flex justify-center items-center">
-          <ScrollReveal direction="up" className="relative flex justify-center items-center">
-            <img
-              src={phoneMockup}
-              alt="Download PharmaDali App Preview"
-              className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
-            />
-          </ScrollReveal>
-        </div>
-
-        {/* Right Column — Text Content & CTA */}
-        <ScrollReveal direction="left" delay={0.2} className="flex flex-col items-center lg:items-start text-center lg:text-left">
+      <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-2 sm:gap-8 lg:gap-16 xl:gap-20">
+        
+        {/* Text Content & CTA (First on Mobile, Right on Desktop) */}
+        <ScrollReveal direction="left" delay={0.2} className="flex flex-col items-center lg:items-start text-center lg:text-left lg:order-2">
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] xl:text-5xl font-bold text-[#38A5DC] tracking-tight leading-[1.18] mb-5">
             Ready to Make Your
             <br />
             Pharmacy Trip Easier?
           </h2>
 
-          <div className="text-[#333333] font-bold text-base sm:text-lg lg:text-xl leading-relaxed mb-8">
+          <div className="text-[#333333] font-bold text-[15px] sm:text-lg lg:text-xl leading-relaxed mb-8">
             <p>Order online. Get approved. Pay online.</p>
             <p>Pick up with ease.</p>
           </div>
@@ -51,12 +41,24 @@ export function DownloadCTA() {
           <div className="w-full sm:w-auto">
             <Link
               to="/install"
-              className="block sm:inline-block w-full sm:w-auto text-center bg-[#38A5DC] hover:bg-[#2B94CC] text-white font-bold text-base sm:text-base lg:text-lg px-8 sm:px-10 py-4 sm:py-4 rounded-xl shadow-md transition-all transform hover:-translate-y-0.5"
+              className="block sm:inline-block w-full sm:w-auto text-center bg-[#38A5DC] hover:bg-[#2B94CC] text-white font-bold text-base sm:text-base lg:text-lg px-8 sm:px-10 py-4 sm:py-4 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5"
             >
               Download the PharmaDali App
             </Link>
           </div>
         </ScrollReveal>
+
+        {/* Phone Mockup (Second on Mobile, Left on Desktop) */}
+        <div className="relative flex justify-center items-end lg:items-center lg:order-1 mt-2 lg:mt-0 w-full">
+          <ScrollReveal direction="up" className="relative flex justify-center items-center w-full">
+            <img
+              src={phoneMockup}
+              alt="Download PharmaDali App Preview"
+              className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out -mb-72 sm:-mb-80 lg:mb-0"
+            />
+          </ScrollReveal>
+        </div>
+
       </div>
     </section>
   )
