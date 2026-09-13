@@ -41,7 +41,7 @@ export function HowItWorks() {
                   )}
 
                   {/* Circular Number Badge — Perfectly Centered */}
-                  <div className="relative z-10 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#38A5DC] text-white font-bold text-base sm:text-lg flex items-center justify-center shrink-0 shadow-sm select-none leading-none">
+                  <div className="relative z-10 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#38A5DC] text-white font-bold text-base sm:text-lg flex items-center justify-center shrink-0 shadow-md shadow-[#38A5DC]/40 select-none leading-none">
                     <span className="flex items-center justify-center leading-none text-center">
                       {step.number}
                     </span>
