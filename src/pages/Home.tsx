@@ -7,12 +7,12 @@ import { ChatPharmacist } from '../components/features/ChatPharmacist'
 import { OurClients } from '../components/features/OurClients'
 import { FAQ } from '../components/features/FAQ'
 import { DownloadCTA } from '../components/features/DownloadCTA'
+import { ScrollReveal } from '../components/common/ScrollReveal'
 
 export function Home() {
   return (
     <div className="relative w-full bg-white flex flex-col font-sans overflow-x-hidden">
-
-      {/* Hero Section — minHeight ensures circle completes its bottom curve smoothly even when fullscreen */}
+      {/* Hero Section */}
       <section
         className="relative w-full flex flex-col justify-between"
         style={{ minHeight: 'max(100vh, calc(1020 / 1920 * 100vw))' }}
@@ -50,7 +50,7 @@ export function Home() {
         <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-2 items-center w-full px-8 sm:px-14 lg:px-20 xl:px-[10vw] py-8 lg:py-0">
 
           {/* Left Column — Text Content vertically centered */}
-          <div className="flex flex-col items-start text-left space-y-6 lg:space-y-8 max-w-xl xl:max-w-2xl">
+          <ScrollReveal direction="right" className="flex flex-col items-start text-left space-y-6 lg:space-y-8 max-w-xl xl:max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-[50px] xl:text-[58px] 2xl:text-[62px] font-semibold text-[#333333] leading-[1.18] tracking-tight">
               Mas pina<span className="text-[#FF4242]">dali</span>ng<br />
               pagbili ng gamot!
@@ -68,16 +68,16 @@ export function Home() {
                 Download the PharmaDali App
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column — Phone Mockup */}
-          <div className="flex justify-center items-center relative py-6 lg:py-0">
+          <ScrollReveal direction="left" delay={0.2} className="flex justify-center items-center relative py-6 lg:py-0">
             <img
               src={phoneMockup}
               alt="PharmaDali App Preview"
               className="w-auto h-[50vh] sm:h-[65vh] md:h-[75vh] lg:h-[88vh] xl:h-[92vh] max-h-[920px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
             />
-          </div>
+          </ScrollReveal>
 
         </div>
       </section>

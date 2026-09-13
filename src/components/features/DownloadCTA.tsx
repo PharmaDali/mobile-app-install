@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import phoneMockup from '../../assets/img/markup-4.png'
+import { ScrollReveal } from '../common/ScrollReveal'
 
 export function DownloadCTA() {
   return (
@@ -23,15 +24,17 @@ export function DownloadCTA() {
       <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-20">
         {/* Left Column — Phone Mockup */}
         <div className="relative flex justify-center items-center">
-          <img
-            src={phoneMockup}
-            alt="Download PharmaDali App Preview"
-            className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
-          />
+          <ScrollReveal direction="up" className="relative flex justify-center items-center">
+            <img
+              src={phoneMockup}
+              alt="Download PharmaDali App Preview"
+              className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
+            />
+          </ScrollReveal>
         </div>
 
         {/* Right Column — Text Content & CTA */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <ScrollReveal direction="left" delay={0.2} className="flex flex-col items-center lg:items-start text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] xl:text-5xl font-bold text-[#38A5DC] tracking-tight leading-[1.18] mb-5">
             Ready to Make Your
             <br />
@@ -51,7 +54,7 @@ export function DownloadCTA() {
               Download the PharmaDali App
             </Link>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )
