@@ -24,17 +24,15 @@ export function Home() {
           aria-hidden="true"
         >
           <div
-            className="absolute rounded-full opacity-70 blur-[80px] sm:blur-[120px] pointer-events-none animate-blob
-                       w-[400px] h-[400px] -top-[100px] -right-[150px]
-                       sm:w-[600px] sm:h-[600px] sm:-top-[150px] sm:-right-[200px]
-                       lg:w-[1000px] lg:h-[1000px] lg:left-[calc(1060/1920*100vw)] lg:top-[calc(-420/1920*100vw)]"
+            className="absolute rounded-full opacity-70 blur-[60px] sm:blur-[120px] pointer-events-none animate-blob
+                       top-[60%] lg:top-[calc(-420/1920*100vw)] left-1/2 lg:left-[calc(1060/1920*100vw)] -translate-x-1/2 lg:translate-x-0 -translate-y-1/2 lg:translate-y-0
+                       w-[250px] h-[250px] sm:w-[600px] sm:h-[600px] lg:w-[1000px] lg:h-[1000px]"
             style={{ background: '#96D2EE' }}
           />
           <div
-            className="absolute rounded-full opacity-60 blur-[80px] sm:blur-[120px] pointer-events-none animate-blob-delayed
-                       w-[350px] h-[350px] top-[100px] -right-[50px]
-                       sm:w-[500px] sm:h-[500px] sm:top-[200px] sm:-right-[50px]
-                       lg:w-[800px] lg:h-[800px] lg:left-[calc(1360/1920*100vw)] lg:top-[calc(-120/1920*100vw)]"
+            className="absolute rounded-full opacity-60 blur-[60px] sm:blur-[120px] pointer-events-none animate-blob-delayed
+                       top-[70%] lg:top-[calc(-120/1920*100vw)] left-1/2 lg:left-[calc(1360/1920*100vw)] -translate-x-1/2 lg:translate-x-0 -translate-y-1/2 lg:translate-y-0
+                       w-[200px] h-[200px] sm:w-[500px] sm:h-[500px] lg:w-[800px] lg:h-[800px]"
             style={{ background: '#48AAD9' }}
           />
         </div>
@@ -60,7 +58,7 @@ export function Home() {
               pagbili ng gamot!
             </h1>
 
-            <p className="text-[#888888] text-[15px] sm:text-base lg:text-base xl:text-lg max-w-md leading-relaxed font-normal">
+            <p className="text-[#888888] text-[11px] sm:text-base lg:text-base xl:text-lg max-w-md leading-relaxed font-normal">
               Iwas-pila sa botika! Order your medicines online through the PharmaDali App and pick them up at the Pharmacy when ready!
             </p>
 

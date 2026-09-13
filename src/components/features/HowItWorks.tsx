@@ -49,10 +49,10 @@ export function HowItWorks() {
 
                   {/* Step Description */}
                   <div className="flex flex-col text-left pt-1">
-                    <h3 className="text-[#38A5DC] text-lg sm:text-xl font-bold mb-1.5 tracking-tight leading-snug">
+                    <h3 className="text-[#38A5DC] text-base sm:text-xl font-bold mb-1.5 tracking-tight leading-snug">
                       {step.title}
                     </h3>
-                    <p className="text-[#666666] text-[15px] sm:text-[15px] lg:text-[15px] leading-relaxed font-normal">
+                    <p className="text-[#666666] text-[12px] sm:text-[15px] lg:text-[15px] leading-relaxed font-normal">
                       {step.description}
                     </p>
                   </div>
