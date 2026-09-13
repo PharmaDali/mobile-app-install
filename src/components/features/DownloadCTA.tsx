@@ -4,7 +4,7 @@ import { ScrollReveal } from '../common/ScrollReveal'
 
 export function DownloadCTA() {
   return (
-    <section className="relative w-full pt-12 pb-0 lg:pt-32 lg:pb-32 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
+    <section className="relative w-full pt-12 pb-0 lg:pt-32 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none -z-0" aria-hidden="true">
         <div
