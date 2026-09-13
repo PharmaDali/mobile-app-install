@@ -13,7 +13,7 @@ export function HowItWorks() {
         {/* 2-Column Content */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 xl:gap-24">
           {/* Left Column — Phone Mockup */}
-          <div className="flex justify-center items-center order-2 lg:order-1">
+          <div className="flex justify-center items-center">
             <img
               src={phoneMockup}
               alt="PharmaDali App How It Works Preview"
@@ -22,7 +22,7 @@ export function HowItWorks() {
           </div>
 
           {/* Right Column — Step List with Connected Badges */}
-          <div className="flex flex-col order-1 lg:order-2 w-full max-w-xl mx-auto lg:mx-0">
+          <div className="flex flex-col w-full max-w-xl mx-auto lg:mx-0">
             {HOW_IT_WORKS_STEPS.map((step, index) => {
               const isLast = index === HOW_IT_WORKS_STEPS.length - 1
               return (
