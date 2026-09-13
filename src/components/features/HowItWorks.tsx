@@ -3,7 +3,7 @@ import { HOW_IT_WORKS_STEPS } from '../../constants/howItWorks'
 
 export function HowItWorks() {
   return (
-    <section className="relative w-full py-20 lg:py-28 px-6 sm:px-12 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
+    <section className="relative w-full py-12 sm:py-20 lg:py-28 px-6 sm:px-12 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center">
         {/* Section Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#38A5DC] text-center mb-14 lg:mb-20 tracking-tight">
@@ -11,13 +11,13 @@ export function HowItWorks() {
         </h2>
 
         {/* 2-Column Content */}
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 xl:gap-24">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-24">
           {/* Left Column — Phone Mockup */}
           <div className="flex justify-center items-center">
             <img
               src={phoneMockup}
               alt="PharmaDali App How It Works Preview"
-              className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] h-auto object-contain drop-shadow-2xl"
+              className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
 

@@ -3,7 +3,7 @@ import phoneMockup from '../../assets/img/markup-4.png'
 
 export function DownloadCTA() {
   return (
-    <section className="relative w-full py-20 lg:py-32 px-6 sm:px-12 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
+    <section className="relative w-full py-12 sm:py-20 lg:py-32 px-6 sm:px-12 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       {/* Background Circle — exact Figma: X: -462px, W: 1437px, H: 1242px */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none -z-0" aria-hidden="true">
         <div
@@ -20,13 +20,13 @@ export function DownloadCTA() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 xl:gap-20">
+      <div className="relative z-10 max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-20">
         {/* Left Column — Phone Mockup */}
         <div className="relative flex justify-center items-center">
           <img
             src={phoneMockup}
             alt="Download PharmaDali App Preview"
-            className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl"
+            className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
           />
         </div>
 

@@ -75,7 +75,7 @@ export function Home() {
             <img
               src={phoneMockup}
               alt="PharmaDali App Preview"
-              className="w-auto h-[75vh] sm:h-[82vh] lg:h-[88vh] xl:h-[92vh] max-h-[920px] object-contain drop-shadow-2xl"
+              className="w-auto h-[50vh] sm:h-[65vh] md:h-[75vh] lg:h-[88vh] xl:h-[92vh] max-h-[920px] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
 

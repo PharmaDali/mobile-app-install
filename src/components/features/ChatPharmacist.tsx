@@ -2,7 +2,7 @@ import chatMockup from '../../assets/img/markup-3.png'
 
 export function ChatPharmacist() {
   return (
-    <section className="relative w-full pt-16 pb-20 lg:pt-24 lg:pb-32 bg-white overflow-hidden">
+    <section className="relative w-full pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-32 bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-6 sm:px-12 lg:px-20 xl:px-[10vw]">
         {/* Top Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] tracking-tight leading-[1.18] mb-12 lg:mb-16 text-left">
@@ -32,7 +32,7 @@ export function ChatPharmacist() {
             <img
               src={chatMockup}
               alt="Chat with a Pharmacist Mockup"
-              className="w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[500px] xl:max-w-[560px] h-auto object-contain drop-shadow-2xl -mt-10 sm:-mt-16 lg:-mt-28 xl:-mt-32 -mb-10 sm:-mb-16 lg:-mb-28 xl:-mb-32 transition-transform duration-300 hover:scale-[1.02]"
+              className="w-full max-w-[220px] sm:max-w-[420px] lg:max-w-[500px] xl:max-w-[560px] h-auto object-contain drop-shadow-2xl -mt-10 sm:-mt-16 lg:-mt-28 xl:-mt-32 -mb-10 sm:-mb-16 lg:-mb-28 xl:-mb-32 transition-transform duration-500 hover:scale-105 ease-out"
             />
           </div>
         </div>
