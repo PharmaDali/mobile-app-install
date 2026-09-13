@@ -1,16 +1,5 @@
-import orderOnlineIcon from '../../assets/svg/icons/order-online-icon.svg'
-import skipQueueIcon from '../../assets/svg/icons/skip-queue-icon.svg'
-import uploadRxIcon from '../../assets/svg/icons/upload-rx-icon.svg'
-import payOnlineIcon from '../../assets/svg/icons/pay-online-icon.svg'
-import pickupGoIcon from '../../assets/svg/icons/pickup-go-icon.svg'
-
-interface FeatureCardProps {
-  icon: string
-  title: string
-  description: string
-  descriptionLine2?: string
-  className?: string
-}
+import { WHY_PHARMADALI_FEATURES } from '../../constants/whyPharmaDali'
+import type { FeatureCardProps } from '../../types/whyPharmaDali'
 
 function FeatureCard({ icon, title, description, descriptionLine2, className = '' }: FeatureCardProps) {
   return (
@@ -37,40 +26,6 @@ function FeatureCard({ icon, title, description, descriptionLine2, className = '
 }
 
 export function WhyPharmaDali() {
-  const features = [
-    {
-      icon: orderOnlineIcon,
-      title: 'Order Online',
-      description: 'Your medicines, just a few taps away. Mag-order anytime through the PharmaDali app.',
-      className: 'col-span-1 lg:col-span-2',
-    },
-    {
-      icon: skipQueueIcon,
-      title: 'Skip the Queue',
-      description: 'Order ahead, save time. Iwas-pila at mag-order muna bago pumunta sa pharmacy.',
-      className: 'col-span-1 lg:col-span-2',
-    },
-    {
-      icon: uploadRxIcon,
-      title: 'Upload Your Rx',
-      description: 'Prescription ordering made easier. I-upload ang iyong prescription directly sa app for pharmacy review.',
-      className: 'col-span-1 lg:col-span-2',
-    },
-    {
-      icon: payOnlineIcon,
-      title: 'Pay Online',
-      description: 'Approved na? Pay with ease.',
-      descriptionLine2: 'Once approved, you can pay for your order online through the app.',
-      className: 'col-span-1 lg:col-span-3',
-    },
-    {
-      icon: pickupGoIcon,
-      title: 'Pick Up & Go',
-      description: 'Ready na? Pick it up! Kunin ang iyong prepared order sa selected pharmacy— simple at convenient.',
-      className: 'col-span-2 lg:col-span-3',
-    },
-  ]
-
   return (
     <section className="relative w-full py-16 sm:py-20 lg:py-28 px-4 sm:px-8 lg:px-20 xl:px-[10vw] bg-gradient-to-b from-white via-[#EDF7FC]/70 to-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center">
@@ -84,7 +39,7 @@ export function WhyPharmaDali() {
             - Desktop: 3 in top row (col-span-2/6 each) and 2 in bottom row (col-span-3/6 each)
         */}
         <div className="w-full grid grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
-          {features.map((feature) => (
+          {WHY_PHARMADALI_FEATURES.map((feature) => (
             <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>
