@@ -9,17 +9,15 @@ export function DownloadCTA() {
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none -z-0" aria-hidden="true">
         <div
-          className="absolute rounded-full opacity-60 blur-[80px] sm:blur-[120px] pointer-events-none animate-blob
-                     top-1/2 -translate-y-1/2 w-[400px] h-[400px] -left-[100px]
-                     sm:w-[600px] sm:h-[600px] sm:-left-[150px]
-                     lg:w-[1000px] lg:h-[1000px] lg:left-[calc(-300/1920*100vw)]"
+          className="absolute rounded-full opacity-60 blur-[60px] sm:blur-[120px] pointer-events-none animate-blob
+                     top-[60%] lg:top-1/2 left-1/2 lg:left-[calc(-300/1920*100vw)] -translate-x-1/2 lg:translate-x-0 -translate-y-1/2
+                     w-[250px] h-[250px] sm:w-[600px] sm:h-[600px] lg:w-[1000px] lg:h-[1000px]"
           style={{ background: '#CEEEFA' }}
         />
         <div
-          className="absolute rounded-full opacity-60 blur-[80px] sm:blur-[120px] pointer-events-none animate-blob-delayed
-                     top-1/2 -translate-y-1/2 w-[350px] h-[350px] left-[100px]
-                     sm:w-[500px] sm:h-[500px] sm:left-[200px]
-                     lg:w-[800px] lg:h-[800px] lg:left-[calc(200/1920*100vw)]"
+          className="absolute rounded-full opacity-60 blur-[60px] sm:blur-[120px] pointer-events-none animate-blob-delayed
+                     top-[70%] lg:top-1/2 left-1/2 lg:left-[calc(200/1920*100vw)] -translate-x-1/2 lg:translate-x-0 -translate-y-1/2
+                     w-[200px] h-[200px] sm:w-[500px] sm:h-[500px] lg:w-[800px] lg:h-[800px]"
           style={{ background: '#A2DAF2' }}
         />
       </div>
@@ -34,7 +32,7 @@ export function DownloadCTA() {
             Pharmacy Trip Easier?
           </h2>
 
-          <div className="text-[#333333] font-bold text-[15px] sm:text-lg lg:text-xl leading-relaxed mb-8">
+          <div className="text-[#333333] font-bold text-[11px] sm:text-lg lg:text-xl leading-relaxed mb-8">
             <p>Order online. Get approved. Pay online.</p>
             <p>Pick up with ease.</p>
           </div>
