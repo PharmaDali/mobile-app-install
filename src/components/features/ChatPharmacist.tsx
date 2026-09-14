@@ -3,7 +3,7 @@ import { ScrollReveal } from '../common/ScrollReveal'
 
 export function ChatPharmacist() {
   return (
-    <section className="relative w-full pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-32 bg-white overflow-hidden">
+    <section className="relative w-full pt-12 pb-32 sm:pt-16 sm:pb-40 lg:pt-24 lg:pb-48 bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-[10vw]">
         {/* Top Heading */}
         <ScrollReveal direction="up">
