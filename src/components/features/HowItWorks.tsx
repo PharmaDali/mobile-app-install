@@ -1,8 +1,19 @@
-import phoneMockup from '../../assets/img/markup-2.png'
+import { useState, useRef } from 'react'
+import phoneMockupVideo from '../../assets/mp4/howitworks.mp4'
 import { HOW_IT_WORKS_STEPS } from '../../constants/howItWorks'
 import { ScrollReveal } from '../common/ScrollReveal'
 
 export function HowItWorks() {
+  const [isMuted, setIsMuted] = useState(true)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted
+      setIsMuted(!isMuted)
+    }
+  }
+
   return (
     <section className="relative w-full py-12 sm:py-20 lg:py-28 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white overflow-hidden">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center">
@@ -17,12 +28,30 @@ export function HowItWorks() {
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 relative">
           {/* Left Column — Phone Mockup */}
           <div className="relative w-full">
-            <ScrollReveal direction="right" className="flex justify-center items-center lg:sticky lg:top-32 z-10 transition-all duration-500">
-              <img
-                src={phoneMockup}
-                alt="PharmaDali App How It Works Preview"
-                className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out"
-              />
+            <ScrollReveal direction="right" className="flex justify-center items-center lg:sticky lg:top-32 z-10 transition-all duration-500 group">
+              <div className="relative inline-block">
+                <video
+                  ref={videoRef}
+                  src={phoneMockupVideo}
+                  autoPlay
+                  loop
+                  muted={isMuted}
+                  playsInline
+                  className="w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-out rounded-[2rem] sm:rounded-[2.5rem]"
+                />
+                <button
+                  onClick={toggleMute}
+                  className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 bg-black/40 hover:bg-black/60 text-white p-2.5 sm:p-3 rounded-full backdrop-blur-md transition-all shadow-lg z-20 flex items-center justify-center sm:opacity-0 sm:group-hover:opacity-100 focus:opacity-100"
+                  aria-label={isMuted ? "Unmute video" : "Mute video"}
+                  title={isMuted ? "Unmute video" : "Mute video"}
+                >
+                  {isMuted ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                  )}
+                </button>
+              </div>
             </ScrollReveal>
           </div>
 
