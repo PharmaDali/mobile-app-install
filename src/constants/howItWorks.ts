@@ -21,15 +21,15 @@ export const HOW_IT_WORKS_STEPS: StepItem[] = [
   },
   {
     number: 4,
-    title: 'Wait for Approval',
+    title: 'Payment Options',
     description:
-      "Review muna ng pharmacy. Your order and uploaded prescription will be reviewed by the pharmacy. Once approved, you'll be notified that your order is ready for payment.",
+      'Cash or GCash? Pumili ng payment method. Select cash payment directly at the pharmacy upon pickup, or choose to pay online.',
   },
   {
     number: 5,
-    title: 'Payment Options',
+    title: 'Wait for Approval',
     description:
-      'Approved na? Pay online or cash upon pickup. Once approved, choose to pay online via GCash, or select cash payment directly at the pharmacy.',
+      "Review muna ng pharmacy. Your order and uploaded prescription will be reviewed by the pharmacy. Once approved, you'll receive a notification that your order is ready for pickup.",
   },
   {
     number: 6,
