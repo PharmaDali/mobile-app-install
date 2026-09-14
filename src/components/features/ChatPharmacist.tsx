@@ -35,7 +35,7 @@ export function ChatPharmacist() {
             <img
               src={chatMockup}
               alt="Chat with a Pharmacist Mockup"
-              className="w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[500px] xl:max-w-[560px] h-auto object-contain drop-shadow-2xl mt-4 -mb-16 sm:mt-6 sm:-mb-24 lg:-mt-28 xl:-mt-32 lg:-mb-28 xl:-mb-32 transition-transform duration-500 hover:scale-105 ease-out"
+              className="w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[500px] xl:max-w-[560px] h-auto object-contain drop-shadow-2xl -mt-4 -mb-24 sm:mt-0 sm:-mb-24 lg:-mt-28 xl:-mt-32 lg:-mb-28 xl:-mb-32 transition-transform duration-500 hover:scale-105 ease-out"
             />
           </ScrollReveal>
         </div>
