@@ -30,7 +30,7 @@ export function HowItWorks() {
           <div className="relative w-full h-full flex justify-center items-center">
             <div className="flex justify-center items-center z-10 w-full">
               <ScrollReveal direction="right" className="transition-all duration-500 group w-full flex justify-center">
-                <div className="relative w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden drop-shadow-2xl">
+                <div className="relative w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] rounded-[1.25rem] sm:rounded-[1.75rem] overflow-hidden drop-shadow-2xl">
                   <div className="-mt-[9%] -mb-[12%]">
                     <video
                       ref={videoRef}
