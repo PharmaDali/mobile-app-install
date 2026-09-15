@@ -15,5 +15,10 @@ export const PHARMACY_CLIENTS: PharmacyClient[] = [
     address1: 'Brgy. Banadero, Tanauan City, Batangas',
     address2: 'In front of Covered Court',
   },
+  {
+    name: 'Calloway Pharmacy',
+    address1: 'Pob. 3, Tanauan City, Batangas',
+    address2: 'Across the street, near Healthway DMMC.',
+  },
 ]
 

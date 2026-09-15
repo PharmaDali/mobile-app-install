@@ -13,44 +13,51 @@ export function OurClients() {
         {/* Subtitle */}
         <p className="text-[#666666] text-sm sm:text-base max-w-2xl text-center mb-16 lg:mb-24 leading-relaxed font-normal">
           As a growing platform in our first year, we are proud to launch with{' '}
-          <strong className="text-[#38A5DC] font-semibold">2 partner pharmacies</strong>{' '}
+          <strong className="text-[#38A5DC] font-semibold">3 partner pharmacies</strong>{' '}
           —and we&apos;re expanding rapidly to bring convenient healthcare access to more communities soon!
         </p>
 
-        {/* 2 Clients directly on the page (no cards), with middle divider */}
-        <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 relative">
-          {/* Vertical Divider between clients on desktop */}
-          <div
-            className="hidden md:block absolute left-1/2 top-2 bottom-6 w-[2px] -translate-x-1/2 bg-[#38A5DC]/30"
-            aria-hidden="true"
-          />
-
-          {PHARMACY_CLIENTS.map((client) => (
+        {/* 3 Clients directly on the page, with middle dividers on desktop */}
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 relative">
+          {PHARMACY_CLIENTS.map((client, index) => (
             <div
               key={client.name}
-              className="flex flex-col items-center md:items-start text-center md:text-left px-2 sm:px-8"
+              className={`flex flex-col items-center text-center px-2 sm:px-6 ${
+                index !== 0 ? 'md:border-l md:border-[#38A5DC]/30' : ''
+              }`}
             >
-              {/* Client Logo */}
-              <div className="h-16 sm:h-20 w-full flex items-center justify-center md:justify-start mb-6">
-                <img
-                  src={client.logo}
-                  alt={`${client.name} Logo`}
-                  className="max-h-full max-w-[220px] sm:max-w-[260px] w-auto object-contain"
-                />
+              {/* Client Logo or Text Fallback */}
+              <div className="h-16 sm:h-20 w-full flex items-center justify-center mb-6">
+                {client.logo ? (
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} Logo`}
+                    className="max-h-full max-w-[200px] sm:max-w-[240px] w-auto object-contain"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center">
+                    <h3 className="text-2xl sm:text-[28px] font-black text-[#38A5DC] tracking-tight leading-none uppercase">
+                      {client.name.split(' ')[0]}
+                    </h3>
+                    <span className="text-[13px] sm:text-sm font-bold text-[#666666] tracking-[0.2em] uppercase mt-1.5">
+                      {client.name.split(' ').slice(1).join(' ')}
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Location Info */}
-              <div className="flex flex-col items-center md:flex-row md:items-start gap-2 md:gap-3.5 pt-1">
+              <div className="flex flex-col items-center gap-2 md:gap-3 pt-1">
                 <img
                   src={locationIcon}
                   alt="Location"
-                  className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 mt-0 md:mt-0.5 object-contain"
+                  className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 object-contain"
                 />
-                <div className="flex flex-col text-center md:text-left">
+                <div className="flex flex-col text-center">
                   <p className="text-[#333333] text-[14px] sm:text-[15px] font-medium leading-snug">
                     {client.address1}
                   </p>
-                  <p className="text-[#777777] text-[13px] sm:text-[14px] leading-snug mt-1">
+                  <p className="text-[#777777] text-[13px] sm:text-[14px] leading-snug mt-1 max-w-[250px]">
                     {client.address2}
                   </p>
                 </div>
