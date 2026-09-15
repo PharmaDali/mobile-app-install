@@ -23,13 +23,13 @@ export const HOW_IT_WORKS_STEPS: StepItem[] = [
     number: 4,
     title: 'Payment Options',
     description:
-      'Cash or GCash? Pumili ng payment method. Select cash payment directly at the pharmacy upon pickup, or choose to pay online.',
+      'Cash or GCash? Pili ka lang ng hassle-free option mo! Pay cash upon pickup, or pay ahead of time via GCash—just wait for your Rx or discount approval before paying online!',
   },
   {
     number: 5,
     title: 'Wait for Approval',
     description:
-      "Review muna ng pharmacy. Your order and uploaded prescription will be reviewed by the pharmacy. Once approved, you'll receive a notification that your order is ready for pickup.",
+      "Review muna ng pharmacists natin! Ire-check lang nang mabuti ang order at Rx mo, tapos mag-no-notify kami agad once ready na for pickup.",
   },
   {
     number: 6,
