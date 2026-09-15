@@ -39,7 +39,7 @@ export function OurClients() {
                     <h3 className="text-2xl sm:text-[28px] font-black text-[#38A5DC] tracking-tight leading-none uppercase">
                       {client.name.split(' ')[0]}
                     </h3>
-                    <span className="text-[13px] sm:text-sm font-bold text-[#666666] tracking-[0.2em] uppercase mt-1.5">
+                    <span className="text-[13px] sm:text-sm font-bold text-[#666666] tracking-[0.2em] uppercase mt-1.5 pl-[0.2em]">
                       {client.name.split(' ').slice(1).join(' ')}
                     </span>
                   </div>
@@ -47,17 +47,17 @@ export function OurClients() {
               </div>
 
               {/* Location Info */}
-              <div className="flex flex-col items-center gap-2 md:gap-3 pt-1">
+              <div className="flex flex-col items-center gap-2 md:gap-3 pt-1 w-full">
                 <img
                   src={locationIcon}
                   alt="Location"
                   className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 object-contain"
                 />
-                <div className="flex flex-col text-center">
-                  <p className="text-[#333333] text-[14px] sm:text-[15px] font-medium leading-snug">
+                <div className="flex flex-col items-center text-center w-full">
+                  <p className="text-[#333333] text-[14px] sm:text-[15px] font-medium leading-snug w-full">
                     {client.address1}
                   </p>
-                  <p className="text-[#777777] text-[13px] sm:text-[14px] leading-snug mt-1 max-w-[250px]">
+                  <p className="text-[#777777] text-[13px] sm:text-[14px] leading-snug mt-1 max-w-[250px] mx-auto w-full">
                     {client.address2}
                   </p>
                 </div>
