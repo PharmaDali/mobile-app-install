@@ -25,13 +25,13 @@ export function HowItWorks() {
         </ScrollReveal>
 
         {/* 2-Column Content */}
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 relative">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 relative items-center">
           {/* Left Column — Phone Mockup */}
-          <div className="relative w-full h-full">
-            <div className="lg:sticky lg:top-32 flex justify-center items-center z-10">
+          <div className="relative w-full h-full flex justify-center items-center">
+            <div className="flex justify-center items-center z-10 w-full">
               <ScrollReveal direction="right" className="transition-all duration-500 group w-full flex justify-center">
                 <div className="relative w-full max-w-[200px] sm:max-w-[340px] lg:max-w-[380px] xl:max-w-[420px] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden drop-shadow-2xl">
-                  <div className="-mt-[8%] -mb-[10%]">
+                  <div className="-mt-[9%] -mb-[12%]">
                     <video
                       ref={videoRef}
                       src={phoneMockupVideo}
