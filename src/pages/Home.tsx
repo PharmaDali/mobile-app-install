@@ -8,6 +8,7 @@ import { OurClients } from '../components/features/OurClients'
 import { FAQ } from '../components/features/FAQ'
 import { DownloadCTA } from '../components/features/DownloadCTA'
 import { ScrollReveal } from '../components/common/ScrollReveal'
+import { APP_DOWNLOAD_LINK } from '../constants/links'
 
 export function Home() {
   return (
@@ -63,12 +64,12 @@ export function Home() {
             </p>
 
             <div className="pt-2 sm:pt-2 w-full sm:w-auto">
-              <Link
-                to="/install"
+              <a
+                href={APP_DOWNLOAD_LINK}
                 className="block sm:inline-block w-full sm:w-auto text-center bg-[#38A5DC] hover:bg-[#2B94CC] text-white font-bold text-base sm:text-base xl:text-lg px-8 sm:px-10 py-4 sm:py-4 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5"
               >
                 Download the PharmaDali App
-              </Link>
+              </a>
             </div>
           </ScrollReveal>
 
