@@ -13,7 +13,7 @@ export const PHARMACY_CLIENTS: PharmacyClient[] = [
     name: 'Landicho Drugstore',
     logo: landichoLogo,
     address1: 'Brgy. Banadero, Tanauan City, Batangas',
-    address2: 'In front of Covered Court',
+    address2: 'Beside Brgy. Hall',
   },
   {
     name: 'Calloway Pharmacy',
