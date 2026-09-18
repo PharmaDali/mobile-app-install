@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
 import phoneMockupDesktop from '../../assets/img/markup-4.png'
 import phoneMockupMobile from '../../assets/img/markup-5.png'
 import { ScrollReveal } from '../common/ScrollReveal'
+import { APP_DOWNLOAD_LINK } from '../../constants/links'
 
 export function DownloadCTA() {
   return (
@@ -38,12 +38,12 @@ export function DownloadCTA() {
           </div>
 
           <div className="w-full sm:w-auto">
-            <Link
-              to="/install"
+            <a
+              href={APP_DOWNLOAD_LINK}
               className="block sm:inline-block w-full sm:w-auto text-center bg-[#38A5DC] hover:bg-[#2B94CC] text-white font-bold text-base sm:text-base lg:text-lg px-8 sm:px-10 py-4 sm:py-4 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5"
             >
               Download the PharmaDali App
-            </Link>
+            </a>
           </div>
         </ScrollReveal>
 
