@@ -32,7 +32,8 @@ export function OurClients() {
                   <img
                     src={client.logo}
                     alt={`${client.name} Logo`}
-                    className="max-h-full max-w-[200px] sm:max-w-[240px] w-auto object-contain"
+                    className={`max-h-full max-w-[200px] sm:max-w-[240px] w-auto object-contain ${client.logoClassName || ''}`}
+                    style={client.logoStyle}
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center">

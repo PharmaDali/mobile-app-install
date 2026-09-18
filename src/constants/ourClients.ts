@@ -1,5 +1,6 @@
 import puremedLogo from '../assets/svg/puremed-logo.svg'
 import landichoLogo from '../assets/svg/landichods-logo.svg'
+import callowayLogo from '../assets/img/callowayLogo.png'
 import type { PharmacyClient } from '../types/ourClients'
 
 export const PHARMACY_CLIENTS: PharmacyClient[] = [
@@ -17,6 +18,8 @@ export const PHARMACY_CLIENTS: PharmacyClient[] = [
   },
   {
     name: 'Calloway Pharmacy',
+    logo: callowayLogo,
+    logoStyle: { transform: 'scale(2.8)' },
     address1: 'Pob. 3, Tanauan City, Batangas',
     address2: 'Across the street, near Healthway DMMC.',
   },
