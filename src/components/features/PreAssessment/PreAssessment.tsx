@@ -28,7 +28,7 @@ export function PreAssessment() {
                 href="https://forms.gle/xu4qLhKdjFyQVsuW8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block lg:inline-block w-full lg:w-auto text-center bg-white text-[#38A5DC] hover:text-[#2B94CC] hover:bg-gray-50 font-bold text-base px-8 py-4 rounded-xl shadow-md transition-all transform hover:-translate-y-1"
+                className="block sm:inline-block w-full sm:w-auto text-center bg-white text-[#38A5DC] hover:text-[#2B94CC] hover:bg-gray-50 font-bold text-base lg:text-lg px-8 sm:px-10 py-4 lg:py-[18px] rounded-2xl shadow-md transition-all transform hover:-translate-y-1"
               >
                 Take the survey
               </a>
