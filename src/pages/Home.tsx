@@ -7,6 +7,7 @@ import { ChatPharmacist } from '../components/features/ChatPharmacist'
 import { OurClients } from '../components/features/OurClients'
 import { FAQ } from '../components/features/FAQ'
 import { DownloadCTA } from '../components/features/DownloadCTA'
+import { PreAssessment } from '../components/features/PreAssessment/PreAssessment'
 import { ScrollReveal } from '../components/common/ScrollReveal'
 
 export function Home() {
@@ -83,6 +84,9 @@ export function Home() {
 
         </div>
       </section>
+
+      {/* Pre-Assessment Form CTA */}
+      <PreAssessment />
 
       {/* Why PharmaDali Section */}
       <WhyPharmaDali />
