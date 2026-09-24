@@ -6,10 +6,10 @@ export function PreAssessment() {
     <section className="relative w-full py-12 px-5 sm:px-10 lg:px-20 xl:px-[10vw] bg-white">
       <div className="max-w-[1360px] mx-auto">
         <ScrollReveal direction="up">
-          <div className="bg-[#48AAD9] rounded-[16px] lg:rounded-[24px] p-8 sm:p-10 lg:p-12 shadow-[0_15px_40px_rgba(72,170,217,0.2)] flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-16">
+          <div className="bg-[#48AAD9] rounded-[16px] lg:rounded-[24px] p-8 sm:p-10 lg:p-12 shadow-[0_15px_40px_rgba(72,170,217,0.2)] flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-16">
             
             <div className="text-white text-left flex-1">
-              <h2 className="text-2xl sm:text-3xl lg:text-[32px] xl:text-[38px] font-bold mb-4 tracking-tight flex flex-wrap items-center gap-x-3 lg:gap-x-4 gap-y-1">
+              <h2 className="text-2xl sm:text-3xl lg:text-[32px] xl:text-[38px] font-bold mb-4 tracking-tight flex flex-wrap items-baseline gap-x-3 lg:gap-x-4 gap-y-1">
                 <img 
                   src={pharmaDaliTextAssessment} 
                   alt="PharmaDali" 
