@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.pharmadali.com/sitemap.xml
+Sitemap: https://pharmadali.com/sitemap.xml
